@@ -6,7 +6,7 @@ begin
         write('Nhap n'); read(n);
         k:=1; count:=0; c[k]:=n;
 end;
-procedure result;
+procedure printResult;
 begin
         inc(count);
         write('Cach chia ' , count, ': ');
@@ -46,7 +46,7 @@ begin
         stop:= false;
         while (stop = false) do
         begin
-                result();
+                printResult();
                 nextDivision();
         end;
 end.
